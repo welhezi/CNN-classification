@@ -3,10 +3,10 @@ name : CI workflow
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -47,7 +47,7 @@ jobs:
       # Configure DVC Remote
       - name: Configure DVC Remote
         run: |
-          uv run dvc remote add -d gdrive_remote gdrive://1ie7WCX4CviTDS04l-bTZpJJhTqfh3cYH
+          uv run dvc remote add -d gdrive_remote gdrive://1iDBe160x9aKT-j70wDSZ7DIVyh67D5dK
         
       - name: Modify DVC Remote
         run: |
